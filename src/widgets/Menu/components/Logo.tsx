@@ -34,9 +34,9 @@ const StyledLink = styled(Link)`
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href, banner }) => {
   const isAbsoluteUrl = href.startsWith("http");
   if(isDark){
-    banner = 'https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png';
+    banner = '..\onyx.png';
   } else {
-    banner = 'https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png';
+    banner = '..\onyx.png';
   }
 
   return (
@@ -51,7 +51,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href, banner }) =
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Onyx home page">
           <img
-            src="https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png"
+            src="..\onyx.png"
             alt="Onyx Logo"
             className="mobile-icon"
           />
@@ -64,7 +64,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href, banner }) =
       ) : (
         <StyledLink to={href} aria-label="Onyx home page">
           <img
-            src="https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png"
+            src="..\onyx.png"
             alt="Onyx Logo"
             className="mobile-icon"
           />

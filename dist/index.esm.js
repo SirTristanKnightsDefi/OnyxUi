@@ -2429,17 +2429,17 @@ var Logo = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href, banner = _a.banner;
     var isAbsoluteUrl = href.startsWith("http");
     if (isDark) {
-        banner = 'https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png';
+        banner = '..\onyx.png';
     }
     else {
-        banner = 'https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png';
+        banner = '..\onyx.png';
     }
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$m, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$n, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Onyx home page" },
-            React.createElement("img", { src: "https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png", alt: "Onyx Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "..\\onyx.png", alt: "Onyx Logo", className: "mobile-icon" }),
             React.createElement("img", { src: banner, alt: "Onyx Logo", className: "desktop-icon" }))) : (React.createElement(StyledLink, { to: href, "aria-label": "Onyx home page" },
-            React.createElement("img", { src: "https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png", alt: "Onyx Logo", className: "mobile-icon" }),
+            React.createElement("img", { src: "..\\onyx.png", alt: "Onyx Logo", className: "mobile-icon" }),
             React.createElement("img", { src: banner, alt: "Onyx Logo", className: "desktop-icon" })))));
 };
 var templateObject_1$c;
@@ -2724,12 +2724,12 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container, null,
         React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0xE6C476b2865f246bf0e7011e218E8A50AF4cd63a", target: "_blank" },
-            React.createElement("img", { src: "https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png", alt: "Onyx Logo", style: {
+            React.createElement("img", { src: "..\\onyx.png", alt: "Onyx Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } }),
             React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(6)))) : (React.createElement(Skeleton, { width: 80, height: 24 },
-            React.createElement("img", { src: "https://onyxtoken.net/wp-content/uploads/2021/10/cropped-onyxxx.png", alt: "Onyx Logo", style: {
+            React.createElement("img", { src: "..\\onyx.png", alt: "Onyx Logo", style: {
                     width: "24px",
                     marginRight: "8px",
                 } })))),
